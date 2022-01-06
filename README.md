@@ -5,7 +5,7 @@ Ruby Capstone Project is simple Bot that gives health TIps and Messagess against
 
 ![screenshot](img/picture.png)
 
-Covid19_MessageBot is a telegram bot where users can get health tips on Covid 19 virus. Users can get messages of how to prevent selfs from this virus.
+Covid19_MessageBot is a telegram bot where users can get health tips on Covid 19 virus. Users can get messages of how to prevent selfs from this virus. Also with a valid statistics.
 
 ## Built With
 

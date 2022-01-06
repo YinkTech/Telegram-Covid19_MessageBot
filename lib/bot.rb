@@ -1,4 +1,5 @@
 require 'telegram_bot'
+require_relative 'data'
 
 token = 'Paste the token you got from the BotFather here'
 bot = TelegramBot.new(token: token)
@@ -24,7 +25,12 @@ bot.get_updates(fail_silently: true) do |message|
                  when /precautions/i
                    " Wear a mask. \n Clean your hands \n Keep a safe distance.."
                  when /commands/i
-                   " /start \n /morning \n /afternoon \n /evening \n /splash \n /Symptoms \n /precautions"
+                   " /start \n /morning \n /afternoon \n /evening \n /splash \n /Symptoms \n /precautions \n /data"
+
+                 when '/data'
+                   values = Data.new
+                   value = values.select_current
+                   "This is Nigeria Covid-19 Statistics:\nDate - #{value['Date']},\nCountry - #{value['Country']},\nDeath case - #{value['Deaths']},\nActive case - #{value['Active']},\nConfirmed Cases - #{value['Confirmed']}."
                  else
                    "I have no idea what #{command.inspect} means."
                  end
