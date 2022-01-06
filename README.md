@@ -1,4 +1,4 @@
-# Telegram-Bot-Covid19
+# Covid19_MessageBot - A Telegram Bot.
 
 > Ruby Capstone Project (Covid19_MessageBot - A Telegram Bot)
 Ruby Capstone Project is simple Bot that gives health TIps and Messagess against Covid 19. 
